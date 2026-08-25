@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# Environment files
+.env
+*.env.local
+*.env.*.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+revenue_recovery.db
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Test / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# Logs
+*.log
+logs/
+
+# Node (if frontend ever grows)
+node_modules/
