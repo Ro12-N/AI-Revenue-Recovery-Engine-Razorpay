@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Revenue Recovery Engine — Razorpay Track 03</title>
+  <meta name="description" content="Closed-loop agent watching revenue-losing events, diagnosing causes, deciding bounded actions, executing recovery with strict deterministic guardrails and audit trail." />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Header & Hero Section -->
+    <header class="header-section">
+      <div class="eyebrow">
+        <span class="badge">RAZORPAY TRACK 03</span>
+        <span>AI Revenue Recovery Engine · Audit Ledger & Execution Engine</span>
+      </div>
+      <h1 class="hero-title">Autonomous Revenue Recovery with Deterministic Policy Bounds</h1>
+      <p class="hero-subtitle">
+        A closed-loop agent that detects failed payments and checkout drop-offs, diagnoses ambiguous root causes with bounded LLMs, enforces strict stopping rules, and executes high-converting recovery outreach under rigorous financial guardrails.
+      </p>
+    </header>
+
+    <!-- Controls Bar -->
+    <section class="control-bar" aria-label="Batch Execution Controls">
+      <div class="control-group">
+        <label for="seed-input" class="input-label">Seed:</label>
+        <input type="number" id="seed-input" class="text-input" value="42" min="1" max="999999" />
+
+        <label for="count-input" class="input-label" style="margin-left: 8px;">Event Count:</label>
+        <input type="number" id="count-input" class="text-input" value="70" min="10" max="500" />
+
+        <button id="run-btn" class="btn btn-primary" id="run-engine-btn">
+          ▶ Run Engine Batch
+        </button>
+
+        <button id="skip-btn" class="btn btn-skip" style="display: none;">
+          ⚡ Skip Playback
+        </button>
+      </div>
+
+      <div class="control-group">
+        <button id="export-csv-btn" class="btn btn-secondary" disabled>
+          📥 Export CSV Audit
+        </button>
+        <button id="export-json-btn" class="btn btn-secondary" disabled>
+          { } Export JSON
+        </button>
+      </div>
+    </section>
+
+    <!-- Ticker / Live Playback Banner -->
+    <div id="ticker-banner" class="ticker-container" style="display: none;">
+      <div class="ticker-pulse"></div>
+      <div id="ticker-count" style="font-weight: 600; color: var(--money);">Resolving events live...</div>
+      <div style="font-size: 11px; color: var(--ink-soft); margin-left: auto;">Simulating real-time payment recovery resolution</div>
+    </div>
+
+    <!-- 1. Stats Strip & High-Impact Counterfactual Comparison -->
+    <section id="stat-strip-container" class="stats-strip" aria-label="Key Performance Indicators"></section>
+
+    <!-- 2. 5-Stage Pipeline Flow Rail -->
+    <section id="pipeline-rail-container" class="pipeline-rail-container" aria-label="Pipeline Stages"></section>
+
+    <!-- 3. AI vs Rules Architecture Disclosure (Collapsible) -->
+    <section id="disclosure-container" aria-label="AI vs Rules Disclosure"></section>
+
+    <!-- 4. Permanent Guardrail Active Verification (Adversarial Self-Test) -->
+    <section id="guardrail-container" aria-label="Guardrail Verification"></section>
+
+    <!-- 5. Plain-English Executive Summary -->
+    <section id="summary-container" aria-label="Executive Summary"></section>
+
+    <!-- 6. Full Audit Ledger Table with Expandable Traces -->
+    <section id="ledger-container" aria-label="Audit Ledger"></section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>AI Revenue Recovery Engine · Built for Razorpay Hackathon Track 03 Evaluation</div>
+      <div style="margin-top: 4px; color: var(--ink-faint);">Evaluation Rubric: Problem Taste · Build Quality · AI Judgment · Failure Recovery</div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
