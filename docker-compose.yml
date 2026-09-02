@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  revenue-recovery-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - DB_FILE=/app/revenue_recovery.db
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
